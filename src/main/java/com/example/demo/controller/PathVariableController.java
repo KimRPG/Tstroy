@@ -10,7 +10,7 @@ public class PathVariableController {
     public String pathVariable(@PathVariable("name") String userName) {
         return "PathVariable 연습 name : " + userName;
     }
-    @RequestMapping("/path/{name}")
+    @RequestMapping("/pathV2/{name}")
     public String pathVariableV2(@PathVariable String name) {
         return "PathVariable 연습 name : " + name;
     }

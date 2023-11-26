@@ -37,10 +37,10 @@ public class RequestParamController {
     public String requestParamDefault(
             @RequestParam(required = true, defaultValue = "guest") String name,
             @RequestParam(required = false, defaultValue = "-1") int age) {
-        return "requestParamV4 연습 name : " + name + " age : " + age;
+        return "requestParamV5 연습 name : " + name + " age : " + age;
     }
     @RequestMapping("/map")
     public String requestParamMap(@RequestParam Map<String, Object> paramMap) {
-        return "requestParamV4 연습 name : " + paramMap.get("name") + " age : " + paramMap.get("age");
+        return "requestParamV6 연습 name : " + paramMap.get("name") + " age : " + paramMap.get("age");
     }
 }
